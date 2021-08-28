@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+background: url('wp2409705-snake-game-wallpapers.jpg');
+min-height: 100vh;
+background-size: 100vw 100vh;
+mask-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#board{
+background: linear-gradient(rgb(57, 105, 13),rgb(160, 216, 7),rgb(238, 255, 0));
+width:90vmin;
+height: 92vmin;
+display: grid;
+grid-template-rows: repeat(18,1fr);
+grid-template-columns: repeat(18,1fr) ;
+}
+.head{
+    background:linear-gradient( rgb(214, 6, 103),rgb(136, 7, 93),rgb(105, 16, 50) );
+    border: .25vmin solid rgb(236, 18, 109);
+    border-radius: 7px;
+    box-shadow: 3px 4px 30px 5px rgb(183, 128, 190);
+    transform: scale(1.02);
+    
+}
+.food{
+    background: linear-gradient(rgb(0, 255, 234),rgb(3, 80, 20));
+    /* border: .25vmin solid rgb(0, 0, 0);  */
+    border-radius: 50px;
+}
+.snake{
+    transition: width 2.2s;
+    background: linear-gradient(rgb(255, 6, 234),rgb(91, 3, 149));
+    border: .25vmin solid rgb(153, 80, 80);
+    border-radius: 10px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 40px;
+    font-family: 'Rampart One', cursive;
+
+}
+#hiscoreBox{
+    position: absolute;
+    top: 60px;
+    right: 140px;
+    font-size: 40px;
+    font-family: 'Rampart One', cursive;
+    
+
+}
