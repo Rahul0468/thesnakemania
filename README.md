@@ -1,1 +1,1 @@
-# thesnakemania.github.io
+# thesnakemania
